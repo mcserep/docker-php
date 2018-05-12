@@ -45,6 +45,8 @@ RUN docker-php-ext-install \
 # Install & enable Xdebug for code coverage reports
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
+# Enable URL rewrite
+RUN a2enmod rewrite
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
