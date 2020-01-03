@@ -5,6 +5,7 @@ Docker images built on top of the official PHP images with the addition of some 
 ## Supported tags
 * `5.6` [Dockerfile](5.6/Dockerfile)
 * `7.0` [Dockerfile](7.0/Dockerfile)
+* `7.4` [Dockerfile](7.4/Dockerfile)
 
 ## PHP extensions
 * mbstring
