@@ -25,7 +25,9 @@ RUN apt-get install -y \
     libaspell-dev \
     libsnmp-dev \
     libpcre3-dev \
-    libtidy-dev
+    libtidy-dev \
+    libonig-dev \
+    libzip-dev
 # Intall compiler tools
 RUN apt-get install -y bison
 # Install PHP extensions
