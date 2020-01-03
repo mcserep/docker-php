@@ -6,30 +6,28 @@ RUN apt-get update -y
 RUN apt-get install -y git zip
 # Install libraries
 RUN apt-get install -y \
-    libpq-dev \
+    # curl
     libcurl4-gnutls-dev \
+    # intl
     libicu-dev \
-    libvpx-dev \
+    # gd
     libjpeg-dev \
     libpng-dev \
-    libxpm-dev \
     zlib1g-dev \
+    libxpm-dev \
+    libwebp-dev \
     libfreetype6-dev \
+    # xml
     libxml2-dev \
     libexpat1-dev \
+    # bz2
     libbz2-dev \
-    libgmp3-dev \
-    libldap2-dev \
-    unixodbc-dev \
-    libsqlite3-dev \
-    libaspell-dev \
-    libsnmp-dev \
-    libpcre3-dev \
-    libtidy-dev \
+    # mbstring
     libonig-dev \
-    libzip-dev
-# Intall compiler tools
-RUN apt-get install -y bison
+    # zip
+    libzip-dev \
+    # pspell_* functions
+    libaspell-dev
 # Install PHP extensions
 RUN docker-php-ext-install \
     mbstring \
@@ -46,7 +44,7 @@ RUN docker-php-ext-install \
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
 # Enable URL rewrite
-RUN a2enmod rewrite
+RUN a2enmod rewrite && service apache2 restart
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
