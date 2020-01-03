@@ -9,7 +9,7 @@ Docker images built on top of the official PHP images with the addition of some 
 
 ## PHP extensions
 * mbstring
-* mcrypt
+* mcrypt (except: PHP 7.4)
 * pdo_mysql
 * curl
 * json

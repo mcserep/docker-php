@@ -6,7 +6,6 @@ RUN apt-get update -y
 RUN apt-get install -y git zip
 # Install libraries
 RUN apt-get install -y \
-    libmcrypt-dev \
     libpq-dev \
     libcurl4-gnutls-dev \
     libicu-dev \
@@ -32,7 +31,6 @@ RUN apt-get install -y bison
 # Install PHP extensions
 RUN docker-php-ext-install \
     mbstring \
-    mcrypt \
     pdo_mysql \
     curl \
     json \
