@@ -21,4 +21,4 @@ Docker images built on top of the official PHP images with the addition of some 
 
 ## Tools
 * Xdebug
-* Composer (with fxp/composer-asset-plugin)
+* Composer

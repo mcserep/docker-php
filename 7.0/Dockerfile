@@ -50,6 +50,5 @@ RUN a2enmod rewrite
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
-RUN composer global require "fxp/composer-asset-plugin:^1.2.0"
 
 WORKDIR /var/www/html/
