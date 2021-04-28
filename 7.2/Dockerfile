@@ -37,7 +37,8 @@ RUN docker-php-ext-install \
     xml \
     zip \
     bz2 \
-    opcache
+    opcache \
+    exif
 # Install & enable Xdebug for code coverage reports
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug

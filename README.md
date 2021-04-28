@@ -20,6 +20,7 @@ Docker images built on top of the official PHP images with the addition of some 
 * zip
 * bz2
 * opcache
+* exif
 
 ## Tools
 * Xdebug
