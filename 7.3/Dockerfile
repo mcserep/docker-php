@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:7.3-apache
 
 # Update package repository
 RUN apt-get update -y
@@ -6,8 +6,6 @@ RUN apt-get update -y
 RUN apt-get install -y git zip
 # Install libraries
 RUN apt-get install -y \
-    # mcrypt
-    libmcrypt-dev \
     # intl
     libicu-dev \
     # gd
@@ -25,7 +23,6 @@ RUN apt-get install -y \
     libaspell-dev
 # Install PHP extensions
 RUN docker-php-ext-install \
-    mcrypt \
     pdo_mysql \
     intl \
     gd \

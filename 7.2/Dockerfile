@@ -6,8 +6,6 @@ RUN apt-get update -y
 RUN apt-get install -y git zip
 # Install libraries
 RUN apt-get install -y \
-    # curl
-    libcurl4-gnutls-dev \
     # intl
     libicu-dev \
     # gd
@@ -17,9 +15,6 @@ RUN apt-get install -y \
     libxpm-dev \
     libwebp-dev \
     libfreetype6-dev \
-    # xml
-    libxml2-dev \
-    libexpat1-dev \
     # bz2
     libbz2-dev \
     # zip
@@ -28,13 +23,9 @@ RUN apt-get install -y \
     libaspell-dev
 # Install PHP extensions
 RUN docker-php-ext-install \
-    mbstring \
     pdo_mysql \
-    curl \
-    json \
     intl \
     gd \
-    xml \
     zip \
     bz2 \
     opcache \
