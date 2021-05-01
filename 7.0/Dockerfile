@@ -34,7 +34,7 @@ RUN docker-php-ext-install \
     opcache \
     exif
 # Install & enable Xdebug for code coverage reports
-RUN pecl install xdebug
+RUN pecl install xdebug-2.7.2
 RUN docker-php-ext-enable xdebug
 # Enable URL rewrite
 RUN a2enmod rewrite && service apache2 restart
