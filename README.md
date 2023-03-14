@@ -9,6 +9,7 @@ Docker images built on top of the official PHP images with the addition of some 
 * `7.3` [Dockerfile](7.3/Dockerfile)
 * `7.4` [Dockerfile](7.4/Dockerfile)
 * `8.0` [Dockerfile](8.0/Dockerfile)
+* `8.2` [Dockerfile](8.2/Dockerfile)
 
 ## PHP extensions
 * mbstring
@@ -58,7 +59,7 @@ Docker images built on top of the official PHP images with the addition of some 
 * Reflection
 * session
 * SimpleXML
-* sodium (*only PHP 7.4-8.0*)
+* sodium (*only PHP 7.4-8.2*)
 * SPL
 * sqlite3
 * standard
