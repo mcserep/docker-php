@@ -12,20 +12,6 @@ Docker images built on top of the official PHP images with the addition of some 
 * `8.2` [Dockerfile](8.2/Dockerfile)
 
 ## PHP extensions
-* mbstring
-* mcrypt (until PHP 7.0)
-* pdo_mysql
-* curl
-* json
-* intl
-* gd
-* xml
-* zip
-* bz2
-* opcache
-* exif
-
-## PHP extensions
 * bz2
 * Core
 * ctype
